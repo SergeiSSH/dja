@@ -1,0 +1,12 @@
+<!--  наследуемся от шаблона default.html -->
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+Products
+{% endblock title %}
+
+<!-- выводим все товары -->
+{% block content %}
+<h1>Все товары</h1>
+{{ products }}
+{% endblock content %}
